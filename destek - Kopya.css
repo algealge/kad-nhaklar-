@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora";
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    background-color: #f2f1f1;
+    color: var(--text-color); 
+}
+
+
+/* Ana Container */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box; /* Gerekli olabilir */
+}
+
+/* Info Kartları */
+.info-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px); /* Varsayılan 3 kart yan yana */
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Küçük ekranlarda kartların genişliği %50 (Tablet için) */
+@media (max-width: 1024px) {
+  .info-card {
+      width: calc(50% - 20px);  /* Tablet ekranlar için 2 kart yan yana */
+  }
+}
+
+/* Mobil ekranlar için kartlar alt alta gelir */
+@media (max-width: 768px) {
+  .info-card {
+      width: 100%;  /* Mobil ekranlarda kartlar alt alta gelir */
+      margin: 10px 0;
+  }
+}
+
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Kart görselleri */
+.partner-image {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+/* Kart Başlıkları */
+.info-card h3 {
+    font-size: 1.25rem;
+    color: #512597;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Kart açıklamaları */
+.info-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #512597;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Destek Başvuru */
+.support-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .support-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .support-form {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #512597;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #3f1d84; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #512597da;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

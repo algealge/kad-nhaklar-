@@ -1,0 +1,115 @@
+/* Genel resetleme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    background-color: #e1bee7;
+    color: var(--text-color);
+  }
+  
+  /* Makale kutusu */
+  .article {
+    background-color: #fff; /* Kutu rengini beyaz yapalÄ±m */
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* TaÅŸmayÄ± engeller */
+  }
+  
+  /* Makale resmi */
+  .article-image {
+    width: 100%; /* Resmin geniÅŸliÄŸi %100 olmalÄ± */
+    height: auto; /* YÃ¼kseklik otomatik */
+    max-height: 250px; /* Maksimum yÃ¼kseklik sÄ±nÄ±rÄ± */
+    object-fit: cover; /* Resmi kutuya tam uyacak ÅŸekilde kesme */
+    border-radius: 10px; /* Kenarlara yuvarlatma */
+    margin-bottom: 20px; /* Resim ve iÃ§erik arasÄ±na boÅŸluk */
+  }
+  
+  /* Ä°Ã§erik kÄ±smÄ± */
+  .article-content {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Makale baÅŸlÄ±ÄŸÄ± */
+  .article-title {
+    font-size: 20px;
+    color: #512597da;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Paragraflar */
+  .article-text {
+    font-size: 13px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  
+  /* Responsive dÃ¼zenleme */
+  @media (max-width: 768px) {
+    .article {
+      padding: 10px;
+      margin-bottom: 20px; /* Mobilde daha kÃ¼Ã§Ã¼k boÅŸluk */
+    }
+  
+    .article-title {
+      font-size: 18px;
+    }
+  
+    .article-text {
+      font-size: 14px;
+    }
+  
+    .article-image {
+      height: 180px;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #512597da;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a45dbf;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scroll-top:hover {
+    background-color: #fff;
+  }
+  
+  .scroll-top.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }

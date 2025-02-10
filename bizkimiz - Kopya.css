@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f2f1f1;
+  color: #512597da;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 36px;
+  color: #512597da;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: #7f8c8d;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.about-mission-vision {
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-mission-vision h3 {
+  font-size: 26px;
+  color: #512597da;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-mission-vision p {
+  font-size: 16px;
+  color: #7f8c8d;
+  line-height: 1.8;
+}
+
+.about-values {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+  }
+  
+  .about-values h3 {
+    font-size: 26px;
+    color: #512597da;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .about-values ul {
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 380px;
+  }
+  
+  .about-values li {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  .about-values li i {
+    color: #512597da;
+    margin-right: 10px;
+  }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #512597da;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  color: #512597da;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+h6 {
+  color: rgb(163, 87, 163);
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Bilgisayarda 3'lü düzen */
+  gap: 20px;
+  text-align: center;
+  margin-top: 40px; /* Vizyonun altından mesafe */
+}
+
+
+.team-member {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-photo {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-member h3 {
+  color: #512597da;
+  font-size: 18px;
+  margin: 10px 0;
+  white-space: nowrap;
+}
+
+.role {
+  font-size: 14px;
+  color: rgb(163, 87, 163);
+  margin: 5px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-links img:hover {
+  opacity: 0.7;
+}
+
+
+
+ /* Genel responsive ayarları */
+
+/* About-Mission-Vision Bölümü */
+@media (max-width: 768px) {
+  .about-mission-vision {
+    padding: 40px 20px;  /* Mobilde iç boşlukları azaltıyoruz */
+    margin: 20px auto;    /* Yatayda merkezleme */
+  }
+
+  .about-mission-vision h3 {
+    font-size: 24px;      /* Mobilde başlık boyutunu küçültüyoruz */
+    text-align: center;   /* Başlığı ortalayalım */
+  }
+
+  .about-mission-vision p {
+    font-size: 16px;      /* Metin boyutunu küçültüyoruz */
+    line-height: 1.6;     /* Satır aralığını biraz daha genişletiyoruz */
+    text-align: justify;  /* Metni iki yana yaslıyoruz */
+    margin-top: 10px;     /* Üstten biraz boşluk ekliyoruz */
+  }
+
+  .about-values ul {
+    margin-left: 0;       /* Mobilde sol margin kaldırıyoruz */
+    text-align: left;     /* Listeyi sola hizalayalım */
+  }
+
+  .about-values li {
+    font-size: 14px;      /* Liste elemanlarının font boyutunu küçültüyoruz */
+    margin-bottom: 10px;  /* Liste elemanları arasına biraz boşluk ekliyoruz */
+  }
+}
+
+/* 480px ve altındaki ekranlar için daha fazla optimizasyon */
+@media (max-width: 480px) {
+  .about-mission-vision {
+    padding: 30px 15px;  /* İç boşlukları daha da küçültüyoruz */
+  }
+
+  .about-mission-vision h3 {
+    font-size: 20px;      /* Başlık boyutunu biraz daha küçültüyoruz */
+  }
+
+  .about-mission-vision p {
+    font-size: 14px;      /* Metin boyutunu daha da küçültüyoruz */
+    line-height: 1.5;     /* Satır aralığını biraz daraltıyoruz */
+  }
+
+  .about-values h3 {
+    font-size: 20px;      /* Vizyon başlığını küçültüyoruz */
+  }
+
+  .about-values li {
+    font-size: 12px;      /* Liste elemanlarının font boyutunu daha da küçültüyoruz */
+  }
+}
+
+/* Team Member (Kartlar) Bölümü */
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mobilde kartları otomatik olarak sığacak şekilde yerleştiriyoruz */
+    gap: 15px; /* Kartlar arasındaki boşluğu azaltıyoruz */
+  }
+
+  .team-member {
+    padding: 20px;  /* Kartların iç boşluğunu artırıyoruz */
+  }
+
+  .team-photo {
+    width: 100px;    /* Fotoğrafları mobilde küçültüyoruz */
+    height: 100px;
+  }
+
+  .team-member h3 {
+    font-size: 16px;  /* Kart başlıklarını küçültüyoruz */
+  }
+
+  .role {
+    font-size: 14px;  /* Rol metin boyutunu küçültüyoruz */
+  }
+
+  .bio {
+    font-size: 14px;  /* Biyografi metninin boyutunu küçültüyoruz */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-container {
+    grid-template-columns: 1fr; /* 480px ve altındaki cihazlarda kartlar tek sütun olarak görünür */
+  }
+
+  .team-member {
+    width: 100%;  /* Kartları tam genişlikte yapıyoruz */
+  }
+
+  .team-photo {
+    width: 80px;   /* Fotoğrafları daha da küçültüyoruz */
+    height: 80px;
+  }
+
+  .team-member h3 {
+    font-size: 14px;  /* Kart başlıklarını daha da küçültüyoruz */
+  }
+
+  .role {
+    font-size: 12px;  /* Rol metin boyutunu daha da küçültüyoruz */
+  }
+
+  .bio {
+    font-size: 12px;  /* Biyografi metninin boyutunu daha da küçültüyoruz */
+  }
+}

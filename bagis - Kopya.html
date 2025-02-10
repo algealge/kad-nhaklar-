@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bağış Yap</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bagis.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo copy.png" alt="Kadın Hakları Logo" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <ul class="nav-links">
+            <li><a href="index.html#home">Ana Sayfa</a></li>
+            <li><a href="index.html#story">Hikayeni paylaş</a></li>
+            <li><a href="bizkimiz.html">Biz Kimiz</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="bagis" class="donation-section">
+        <div class="donation-container">
+          <h2>Bağış Formu</h2>
+          <p class="donation-text">
+            Kadın hakları için verdiğiniz her destek, kadınların daha güçlü bir
+            geleceğe adım atmasına yardımcı olacaktır. Derneğimizin projelerine
+            katkı sağlamak ve toplumsal cinsiyet eşitliği için harekete geçmek
+            için bağış yapabilirsiniz.
+          </p>
+
+          <div class="donation-options">
+            <h3>Bağış Miktarı Seçin</h3>
+            <br />
+            <div class="donation-amounts">
+              <button class="donation-button">₺50</button>
+              <button class="donation-button">₺100</button>
+              <button class="donation-button">₺250</button>
+              <button class="donation-button">₺500</button>
+              <button class="donation-button">Diğer Tutar</button>
+            </div>
+          </div>
+
+          <div class="payment-methods">
+            <h3>Ödeme Yöntemleri</h3>
+            <br />
+            <p>
+              Bağışınızı kredi kartı, banka havalesi veya PayPal üzerinden
+              kolayca yapabilirsiniz.
+            </p>
+            <br />
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-paypal"></i>
+            </div>
+          </div>
+
+          <form id="donation-form">
+            <label for="donation-name">Adınız Soyadınız:</label>
+            <input
+                type="text"
+                id="donation-name"
+                name="name"
+                required
+                placeholder="Adınızı giriniz"
+            />
+        
+            <label for="donation-email">E-posta Adresiniz:</label>
+            <input
+                type="email"
+                id="donation-email"
+                name="email"
+                required
+                placeholder="E-posta adresinizi giriniz"
+            />
+        
+            <label for="donation-amount">Bağış Miktarı:</label>
+            <input
+                type="number"
+                id="donation-amount"
+                name="amount"
+                required
+                placeholder="Bağış miktarını giriniz"
+            />
+        
+            <button type="submit" class="donate-button">Bağış Yap</button>
+        </form>
+        
+        <!-- Başarı mesajı -->
+        <div id="success-message" class="success-message" style="display: none;">
+            <p>Bağış işleminiz başarıyla gerçekleşti!</p>
+        </div>
+        
+        </div>
+      </section>
+    </main>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <div id="iletisim" class="footer-container">
+        <div class="footer-left">
+          <div class="social-media">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <br /><br />
+
+        <div class="footer-center">
+          <div class="footer-links">
+            <h4>Hızlı Bağlantılar</h4>
+            <ul>
+              <li><a href="index.html#book">Kitaplar</a></li>
+              <li><a href="bizkimiz.html">Biz Kimiz</a></li>
+              <li><a href="makale.html">Makaleler</a></li>
+
+              <li><a href="#bizkimiz">Destek Al</a></li>
+            </ul>
+          </div>
+          <br /><br />
+          <div class="footer-contact">
+            <h4>İletişim</h4>
+            <ul>
+              <ul>
+                <li>+90 506 244 00 00</li>
+                <li>kadinHaklari@gmail.com</li>
+                <li>Hafta İçi | 10.00 - 18.00</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="app-card">
+            <h4>KADES</h4>
+            <p>Uygulamayı İndirin</p>
+            <div class="app-buttons">
+              <a
+                href="https://play.google.com/store/apps/details?id=tr.gov.egm.kades&hl=tr"
+                target="_blank"
+                class="app-button google-play"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
+                  alt="Google Play"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/tr/app/kades/id1360309770"
+                target="_blank"
+                class="app-button app-store"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+                  alt="App Store"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Kadın Hakları Derneği | Tüm hakları saklıdır.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

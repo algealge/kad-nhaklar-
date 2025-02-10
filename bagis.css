@@ -1,0 +1,237 @@
+/* Genel stil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora";
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Yatay kaydırma çubuğunu engelle */
+  overflow-y: auto; /* Dikey kaydırma çubuğu aktif olur */
+  background-color: #f2f1f1;
+  color: #512597da; /* Genel metin rengi */
+}
+
+/* Bağış Sayfası Düzeni */
+.donation-section {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donation-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.donation-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.donation-options {
+  margin-bottom: 40px;
+}
+
+.donation-amounts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.donation-button {
+  background-color: rgba(128, 0, 128, 0.758);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donation-button:hover {
+  background-color: rgba(128, 0, 128, 0.758);
+}
+
+.payment-methods {
+  margin-bottom: 30px;
+}
+
+.payment-methods p {
+  font-size: 14px;
+  color: #777;
+}
+
+.payment-icons i {
+  font-size: 24px;
+  color: #333;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.payment-icons i:hover {
+  color: rgba(128, 0, 128, 0.758);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 400px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form input[type="number"] {
+  width: 50%;
+}
+
+.donate-button {
+  background-color: rgba(128, 0, 128, 0.758);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 60%;
+}
+
+.donate-button:hover {
+  background-color: rgba(128, 0, 128, 0.758);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #512597da;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #a45dbf;
+}
+
+.scroll-top.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* **Responsive Düzenlemeler** */
+
+/* Mobile ve tablet için düzenlemeler */
+@media (max-width: 768px) {
+  .donation-section {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .donation-text {
+    font-size: 14px;
+  }
+
+  .donation-options {
+    margin-bottom: 30px;
+  }
+
+  .donation-amounts {
+    flex-direction: column; /* Dikey hizalama */
+    gap: 10px;
+  }
+
+  .donation-button {
+    width: 100%; /* Butonları tam genişlikte yap */
+    font-size: 14px;
+  }
+
+  form {
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  form input {
+    width: 100%;
+    max-width: none; /* Mobilde input elemanları tam genişlikte olacak */
+  }
+
+  .donate-button {
+    width: 100%; /* Bağış yap butonunu tam genişlikte yap */
+  }
+
+  .payment-methods p {
+    font-size: 13px;
+  }
+
+  .payment-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+}
+
+/* Tabletlerde daha uygun hizalama */
+@media (max-width: 1024px) {
+  .donation-amounts {
+    gap: 15px; /* Arayı biraz daralt */
+  }
+
+  form input {
+    width: 70%; /* Form input'larını biraz daha daralt */
+  }
+}
+
+/* Daha küçük ekranlar için ekstra düzenleme */
+@media (max-width: 480px) {
+  .donation-container {
+    padding: 15px;
+  }
+
+  .donation-options {
+    margin-bottom: 20px;
+  }
+
+  .donation-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .donate-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
